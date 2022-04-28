@@ -28,8 +28,10 @@ public class ZipkinClientService {
         HttpEntity<?> httpEntity = new HttpEntity<>(httpRequestHeaders());
 
         try {
-            return restTemplate.exchange(this.baseUrl, HttpMethod.GET, httpEntity, Object.class);
+            return restTemplate.exchange(this.baseUrl, HttpMethod.GET, httpEntity, String.class);
         } catch (RuntimeException re) {
+            System.out.println("URL: " + this.baseUrl);
+            System.out.printf("EXCEPTION: " + re.getMessage());
             throw new RuntimeException("Error on Zipkin Client Service Four");
         }
     }

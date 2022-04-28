@@ -30,7 +30,7 @@ public class ZipkinClientService {
         HttpEntity<?> httpEntity = new HttpEntity<>(httpRequestHeaders());
 
         try {
-            return restTemplate.exchange(this.baseUrl, HttpMethod.GET, httpEntity, Object.class);
+            return restTemplate.exchange(this.baseUrl, HttpMethod.GET, httpEntity, String.class);
         } catch (RuntimeException re) {
             throw new RuntimeException("Error on Zipkin Client Service Start Two");
         }
@@ -41,8 +41,10 @@ public class ZipkinClientService {
         HttpEntity<?> httpEntity = new HttpEntity<>(httpRequestHeaders());
 
         try {
-            return restTemplate.exchange(this.baseUrlFinish, HttpMethod.GET, httpEntity, Object.class);
+            return restTemplate.exchange(this.baseUrlFinish, HttpMethod.GET, httpEntity, String.class);
         } catch (RuntimeException re) {
+            System.out.println("URL: " + this.baseUrl);
+            System.out.printf("EXCEPTION: " + re.getMessage());
             throw new RuntimeException("Error on Zipkin Client Service Finish Two");
         }
     }
