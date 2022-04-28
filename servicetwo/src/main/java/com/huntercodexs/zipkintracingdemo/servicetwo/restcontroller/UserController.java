@@ -23,10 +23,9 @@ public class UserController {
      */
     @GetMapping(path = "/zipkin-flow/start")
     public ResponseEntity<?> start() {
-        System.out.println("ServiceTwo Two - zipkinFlowStart");
-        LOG.info("ServiceTwo Two - zipkinFlowStart");
-        zipkinFlowService.start();
-        return ResponseEntity.ok().body("ServiceTwo Two - zipkinFlowStart");
+        System.out.println("ServiceTwo - zipkinFlowStart");
+        LOG.info("ServiceTwo - zipkinFlowStart");
+        return zipkinFlowService.start();
     }
 
     /**
@@ -34,10 +33,9 @@ public class UserController {
      */
     @GetMapping(path = "/zipkin-flow/finish")
     public ResponseEntity<?> finish() {
-        System.out.println("ServiceTwo Two - zipkinFlowFinish");
-        LOG.info("ServiceTwo Two - zipkinFlowFinish");
-        zipkinFlowService.finish();
-        return ResponseEntity.ok().body("ServiceTwo Two - zipkinFlowFinish");
+        System.out.println("ServiceTwo - zipkinFlowFinish");
+        LOG.info("ServiceTwo - zipkinFlowFinish");
+        return zipkinFlowService.finish();
     }
 
 }
