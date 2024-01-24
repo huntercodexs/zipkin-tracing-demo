@@ -14,15 +14,6 @@ starting and finishing with service one.
 
 ![img.png](resources/images/flow.png)
 
-- About
-
-Below, we can see a simple diagram that shows the communication among microservices. In that diagram, there's one
-start point and one finish point that indicate the start and end of a transaction. Look, there are four services.
-Each one communicates with the next and previous service. It just exchanges information throughout the entire process,
-starting and finishing with service one.
-
-![img.png](resources/images/flow.png)
-
 - How to execute
 
 To execute this project you need run the request command showed below, you can use a Web Browser, The Postman Application
@@ -32,7 +23,20 @@ or any other resource that you have and can make an HTTP Request, for example Cu
 [GET] http://localhost:31705/huntercodexs/zipkintracingdemo/serviceone/api/zipkin-flow/start
 </pre>
 
-- How to prepare the environment
+- How to access Zipkin
+
+<pre>
+http://192.168.0.204:9411/zipkin
+</pre>
+
+![img.png](resources/images/sample.png)
+
+- Explaining the Zipkin resources
+
+- How to access the Kibana to get information about the requests
+
+# Step by step
+<small>How to prepare and execute the environment</small>
 
 First of all you need to clone the project from https://github.com/huntercodexs/docker-series/tree/elk_zipkin_v1 via git
 command and follow the instructions placed in the README file from that repository.
@@ -53,16 +57,16 @@ drwxrwxrwx 6 jereelton jereelton 4096 Dec 12 15:46 servicethree
 -rwxrwxrwx 1 jereelton jereelton 1857 Jan 22 16:27 README.md
 </pre>
 
-2- Configure the application.properties services
+2- Configure the application.properties for all services
 
-- How to access Zipkin
+3- Build each project (you may use your preferred IDE to make it easier)
 
+4- Run each application using the jar file built previously, or just Run the project in the IDE
+
+5- Start the transaction using a request URL as below
 <pre>
-http://192.168.0.204:9411/zipkin
+[GET] http://localhost:31705/huntercodexs/zipkintracingdemo/serviceone/api/zipkin-flow/start
 </pre>
 
-![img.png](resources/images/sample.png)
+6- Check the transaction in the Zipkin Dashboard Panel
 
-- Explaining the Zipkin resources
-
-- How to access the Kibana to get information about the requests
