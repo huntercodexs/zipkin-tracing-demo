@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/servicefour/SERVICEFOUR.iml" filepath="$PROJECT_DIR$/servicefour/SERVICEFOUR.iml" />
-      <module fileurl="file://$PROJECT_DIR$/serviceone/SERVICEONE.iml" filepath="$PROJECT_DIR$/serviceone/SERVICEONE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/servicethree/SERVICETHREE.iml" filepath="$PROJECT_DIR$/servicethree/SERVICETHREE.iml" />
       <module fileurl="file://$PROJECT_DIR$/servicetwo/SERVICETWO.iml" filepath="$PROJECT_DIR$/servicetwo/SERVICETWO.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/zipkin-tracing-demo.iml" filepath="$PROJECT_DIR$/.idea/zipkin-tracing-demo.iml" />
     </modules>

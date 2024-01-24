@@ -13,12 +13,6 @@
         <module name="SERVICETHREE" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SERVICEFOUR" target="1.8" />
-      <module name="SERVICEONE" target="1.8" />
-      <module name="SERVICETHREE" target="1.8" />
-      <module name="SERVICETWO" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
