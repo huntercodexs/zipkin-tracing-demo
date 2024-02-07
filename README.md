@@ -1,14 +1,14 @@
 # ZIPKIN TRACING DEMO
-A simple repository to present a complete trace environment
+A simple repository to present one complete trace environment
 
 > TIP: To use this project with more facility, please check the Docker Series project in the repository/branch
 > https://github.com/huntercodexs/docker-series/tree/elk_zipkin_v1, with this project you can easily create one
-> environment to user together with this repository
+> environment to use together with this repository
 
 - About
 
 Below, we can see a simple diagram that shows the communication among microservices. In that diagram, there's one
-start point and one finish point that indicate the start and end of a transaction. Look, there are four services.
+start point and one finish point that indicate the start and end of a transaction. Look that there are four services.
 Each one communicates with the next and previous service. It just exchanges information throughout the entire process,
 starting and finishing with service one.
 
@@ -16,7 +16,7 @@ starting and finishing with service one.
 
 - How to execute
 
-To execute this project you need run the request command showed below, you can use a Web Browser, The Postman Application
+To execute this project you need run the request command showed below, you can use one Web Browser, the Postman Application
 or any other resource that you have and can make an HTTP Request, for example Curl.
 
 <pre>
@@ -31,9 +31,6 @@ http://192.168.0.204:9411/zipkin
 
 ![img.png](resources/images/sample.png)
 
-- Explaining the Zipkin resources
-
-- How to access the Kibana to get information about the requests
 
 # Step by step
 <small>How to prepare and execute the environment</small>
@@ -61,7 +58,9 @@ drwxrwxrwx 6 jereelton jereelton 4096 Dec 12 15:46 servicethree
 
 3- Build each project (you may use your preferred IDE to make it easier)
 
-4- Run each application using the jar file built previously, or just Run the project in the IDE
+![build-jar.png](resources/images/build-jar.png)
+
+4- Run each application using the jar file built previously, or just run the project in the IDE
 
 5- Start the transaction using a request URL as below
 <pre>
